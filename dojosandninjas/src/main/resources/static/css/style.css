@@ -1,0 +1,35 @@
+* {
+    border: 0px;
+    padding: 2px;
+    text-align: left;
+}
+
+table, th, td {
+    width: 50%;
+    border: 2px solid black;
+}
+
+input[type=text] {
+    align-self: left;
+    width: 25%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+input[type=button] {
+    background-color: black;
+    color: white;
+    padding: 2px 4px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+input[type=submit]{
+    background-color: blue;
+    color: white;
+    padding: 2px 4px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
