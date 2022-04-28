@@ -13,31 +13,31 @@
 <body>
     <h1>Create Ninja</h1>
     <form:form action="/ninjas/new" method="POST" modelAttribute="ninja">
-        <div>
+        <p>
             <form:label path="dojo">Dojo</label>
             <form:select path="dojo">
-            <c:forEach var="dojo" items="${dojos}">
-                <form:option value="${dojo}">
-                    ${dojo.name} Location
+            <c:forEach var="oneDojo" items="${dojos}">
+                <form:option value="${oneDojo}">
+                    ${oneDojo.name} Location
                 </form:option>
             </c:forEach>
             </form:select>
-        </div>
-        <div>
+        </p>
+        <p>
             <form:label path="firstName">First Name</form:label>
             <form:errors path="firstName"></form:errors>
             <form:input path="firstName"></form:input>
-        </div>
-        <div>
+        </p>
+        <p>
             <form:label path="lastName">Last Name</form:label>
             <form:errors path="lastName"></form:errors>
             <form:input path="lastName"></form:input>
-        </div>
-        <div>
+        </p>
+        <p>
             <form:label path="age">Age</form:label>
             <form:errors path="age"></form:errors>
             <form:input path="age"></form:input>
-        </div>
+        </p>
         <input type="submit" value="Create"/>
     </form:form>
 </body>
